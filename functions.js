@@ -1,8 +1,8 @@
 var topic_mapping = {};
 
 topic_mapping ['prem_league'] = [
-  {question_title: "What wwas the Premier League's revenue in 2015?", min: 0, max: 100},
-  {question_title: "How much was Manchester United's club revenue?", min: 0, max: 100}
+  {question_title: "What was the Premier League's revenue in 2015? (in billion £)", min: 0, max: 100},
+  {question_title: "How much was Manchester United's club revenue? (in million £)", min: 0, max: 100}
 ]
 
 topic_mapping ['other_leagues'] = [
@@ -16,8 +16,8 @@ topic_mapping ['other_leagues'] = [
 var answer_mapping = {};
 
 answer_mapping['prem_league'] = [
-  {title: "Title One", answer: "The Premier League's revenue in 2015 was £3.26bn", fact: "The Premier League made more money than Spain's and Italy's clubs combined. It's currently third in the list of highest-paying professional sport leagues. "},
-  {title: "Title Two", answer: " Manchester United's revenue was £433 million", fact: "It has the highest revenue of any English club."}
+  {title: "Question One", answer: "The Premier League's revenue in 2015 was £3.26bn", fact: "The Premier League made more money than Spain's and Italy's clubs combined. It's currently third in the list of highest-paying professional sport leagues. The first one is...you guessed it the NFL! "},
+  {title: "Question Two", answer: " Manchester United's revenue was £433 million", fact: "It has the highest revenue of any English club."}
 ]
 
 answer_mapping['other_leagues'] = [
