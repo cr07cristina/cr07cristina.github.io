@@ -1,14 +1,14 @@
 var topic_mapping = {};
 
 topic_mapping ['prem_league'] = [
-  {question_title: "What was the Premier League's revenue in 2015? (in billion £)", min: 0, max: 400},
+  {question_title: "What was the Premier League's revenue in 2015? (in billion £)", min: 0, max: 100},
   {question_title: "How much was Manchester United's club revenue? (in million £)", min: 0, max: 400}
   
 ]
 
-topic_mapping ['Premier League in the world'] = [
-  {question_title: "What percentage of Premier League players are foreign?", min: 0, max: 100},
-  {question_title: "This is the second subquestion", min: 0, max: 100},
+topic_mapping ['other_leagues'] = [
+  {question_title: "What percentage of Premier League players are foreign? (in percentage)", min: 0, max: 100},
+  {question_title: "This is the second subquestion", min: 0, max: 400},
   {question_title: "This is the second subquestion", min: 0, max: 100},
   {question_title: "This is the second subquestion", min: 0, max: 100},
   {question_title: "This is the third subquestion", min: 0, max: 100}
@@ -23,7 +23,7 @@ answer_mapping['prem_league'] = [
 ]
 
 answer_mapping['other_leagues'] = [
-  {title: "Question One", answer: "The Premier League's revenue in 2015 was £3.26bn", fact: "The Premier League made more money than Spain's and Italy's clubs combined. It's currently third in the list of highest-paying professional sport leagues. "},
+  {title: "Question One", answer: "69% of the Premier League's players are foreign, thats 356.", fact: "At the inception of the Premier League in 1992-93, only 11 players were foreign."},
   {title: "Title Two", answer: " Manchester United's revenue was £433 million", fact: "It has the highest revenue of any English club."},
   {title: "Title One", answer: "The Premier League's revenue in 2015 was £3.26bn", fact: "The Premier League made more money than Spain's and Italy's clubs combined. It's currently third in the list of highest-paying professional sport leagues. "},
   {title: "Title Two", answer: " Manchester United's revenue was £433 million", fact: "It has the highest revenue of any English club."},
@@ -70,7 +70,7 @@ $( document ).ready(function() {
 	    	var question = question_set[i];
 	    	var id = option + "_" + i;
   			container.append($("<p class='sub-question-title'>" + question['question_title'] + "</p>"));			
-  			var slider = $("<input id='slider_" + id + " ' type='range' class='numeric-slider'/>");
+  			var slider = $("<input id='slider_" + id + " ' type='range' class='numeric-slider' max='" + question['max'] + "' min='" + question['min'] + "'/>");
   			container.append(slider);
   			var ele = $("<p id='"+ id + "'>Your Answer: ")
   			container.append(ele);
