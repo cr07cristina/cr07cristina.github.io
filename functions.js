@@ -8,7 +8,7 @@ topic_mapping ['prem_league'] = [
 
 topic_mapping ['other_leagues'] = [
   {question_title: "What percentage of Premier League players are foreign? (in percentage)", min: 0, max: 100},
-  {question_title: "How much is the league's most valuable player?", min: 0, max: 400},
+  {question_title: "What is the value of the League's most valuable player?", min: 0, max: 400},
   {question_title: "How much money did the Premier League generate in broadcast revenue in 2014/2015?", min: 0, max: 100},
   {question_title: "How many Twitter followers does Manchester United have?", min: 0, max: 100},
  
