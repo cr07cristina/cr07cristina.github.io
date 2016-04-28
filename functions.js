@@ -8,10 +8,10 @@ topic_mapping ['prem_league'] = [
 
 topic_mapping ['other_leagues'] = [
   {question_title: "What percentage of Premier League players are foreign? (in percentage)", min: 0, max: 100},
-  {question_title: "This is the second subquestion", min: 0, max: 400},
-  {question_title: "This is the second subquestion", min: 0, max: 100},
-  {question_title: "This is the second subquestion", min: 0, max: 100},
-  {question_title: "This is the third subquestion", min: 0, max: 100}
+  {question_title: "How much is the league's most valuable player?", min: 0, max: 400},
+  {question_title: "How much money did the Premier League generate in broadcast revenue in 2014/2015?", min: 0, max: 100},
+  {question_title: "How many Twitter followers does Manchester United have?", min: 0, max: 100},
+ 
 ]
 
 var answer_mapping = {};
@@ -24,11 +24,10 @@ answer_mapping['prem_league'] = [
 
 answer_mapping['other_leagues'] = [
   {title: "Question One", answer: "69% of the Premier League's players are foreign, thats 356.", fact: "At the inception of the Premier League in 1992-93, only 11 players were foreign."},
-  {title: "Title Two", answer: " Manchester United's revenue was £433 million", fact: "It has the highest revenue of any English club."},
-  {title: "Title One", answer: "The Premier League's revenue in 2015 was £3.26bn", fact: "The Premier League made more money than Spain's and Italy's clubs combined. It's currently third in the list of highest-paying professional sport leagues. "},
-  {title: "Title Two", answer: " Manchester United's revenue was £433 million", fact: "It has the highest revenue of any English club."},
-  {title: "Title One", answer: "The Premier League's revenue in 2015 was £3.26bn", fact: "The Premier League made more money than Spain's and Italy's clubs combined. It's currently third in the list of highest-paying professional sport leagues. "}
-]
+  {title: "Question Two", answer: " £52.50 million", fact: "That would be Eden Hazard from Belgium, he plays for Chelsea FC."},
+  {title: "Question Three", answer: "The Premier League generated 2 billion pounds in broadcast revenue, more than their combined total of matchday and commercial revenue.", fact: "Real Madrid was the top scoring in this one though according to Deloitte's Football Money League."},
+  {title: "Question Four", answer: " ManU has 6.8 million Twitter followers ", fact: "But FC Barcelona has 16.6 million."},
+  ]
 
 
 var answers = [];
